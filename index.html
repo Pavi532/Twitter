@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='assets/bootstrap/js/jquery-3.5.1.js'></script>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src='assets/bootstrap/js/bootstrap.min.js'></script>
+    <title>News Feed</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top py-0">
+            <div class="col-12">
+                <div class="row">
+                    <div class="navColA col-3">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/twitter_logo.png" width="30" height="30" alt="">
+                        </a>
+                    </div>
+                    <div class="navColB col-md-6">
+                        <div class="navbar-nav mx-auto">
+                            <div class="container">
+                                <div class="span2 offset1">
+                                    <a class=" nav-item active nav-link" href="#"><i class="fas fa-house-user"></i></a>
+                                </div>
+                                <div class="span2">
+                                    <a class="nav-item nav-link" href="#"><i class="fas fa-hashtag"></i></a>
+                                </div>
+                                <div class="span2">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                        <a class="nav-item nav-link" href="#"><i class="fas fa-bell"><span id="not-num" class="badge badge-pill badge-danger">3</span></i></a>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="tdrop">
+                                        <a class="dropdown-item" href="#">Chamal added a video.</a>
+                                        <a class="dropdown-item" href="#">ReshK liked your tweet.</a>
+                                        <a class="dropdown-item" href="#">ReshK retweeted your tweet.</a>
+                                    </div>
+                                </div>
+                                <div class="span2">
+                                    <a class="nav-item nav-link" href="#"><i class="fas fa-bookmark"></i></a>
+                                </div>
+                                <div class="span2">
+                                    <a class="nav-item nav-link" href="#"><i class="fas fa-list"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navColC col-md-3">
+                        <div class="container">
+                            <div class="span2 extra"></div>
+                            <div class="span2">
+                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                            </div>
+                            <div class="span2">
+                                <a href="profile.html"><img  class="user-pic" src="assets/images/user1.jpg" width="40" height="40" alt=""></a>
+                            </div>
+                            <div class="span2">
+                                <a href="#" class="nav-link"><i class="fas fa-ellipsis-v"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md fixed-bottom py-0" id="bNav">
+            <div class="container">
+                <div class="col"><a class="nav-link active" href="#"><i class="fas fa-house-user"></i></a></div>
+                <div class="col"><a class="nav-link" href="#"><i class="fas fa-hashtag"></i></a></div>
+                <div class="col">
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bell nav-link"><span id="not-num" class="badge badge-pill badge-danger">3</span></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Chamal added a video.</a>
+                            <a class="dropdown-item" href="#">ReshK liked your tweet.</a>
+                            <a class="dropdown-item" href="#">ReshK retweeted your tweet.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"><a class="nav-link" href="#"><i class="fas fa-bookmark"></i></a></div>
+                <div class="col"><a class="nav-link" href="#"><i class="fas fa-list"></i></a></div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container-fluid">
+        <div class="row main-content">
+            <div class="sideA col-3">
+                <div class="container trending">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Trending</h5>
+                            <div class="row tag">
+                                <div class="col-8"><h5><a href="#" class="badge badge-primary">#LKA</a></h5></div>
+                                <div class="col-2">4.4k</div>
+                                <div class="col-2"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                            <div class="row tag">
+                                <div class="col-8"><h5><a href="#" class="badge badge-primary">#NeuraLink</a></h5></div>
+                                <div class="col-2">2.3k</div>
+                                <div class="col-2"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                            <div class="row tag">
+                                <div class="col-8"><h5><a href="#" class="badge badge-primary">#RTX3070</a></h5></div>
+                                <div class="col-2">2.3k</div>
+                                <div class="col-2"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                            <p><a href="#" class="card-link">See more...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container follow">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Follow</h5>
+                            <div class="row">
+                                <div class="col-3"><img class="user-pic2" src="assets/images/user2.jpg" alt="" srcset=""></div>
+                                <div class="col-7">
+                                    <p class="name">Ted Hemanth</p>
+                                    <p class="handle">@TedMama</p>
+                                </div>
+                                <div class="col-2"><img class="follow-add" src="assets/images/follow.png" height="30px" width="30px" alt="" srcset=""></div>
+                            </div>
+                            <div class="row"><div class="col-3"><img class="user-pic2" src="assets/images/user3.jpg" alt="" srcset=""></div>
+                            <div class="col-7">
+                                <p class="name">Caroline</p>
+                                <p class="handle">@Cars3</p>
+                            </div>
+                            <div class="col-2"><img class="follow-add" src="assets/images/follow.png" height="30px" width="30px" alt="" srcset=""></div>
+                        </div>
+                            <p><a href="#" class="card-link">See more...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <span class="terms">Terms Privacy policy Cookies Ads info More <br>© 2020 Twitter, Inc.</span> 
+                </div>
+            </div>
+            <div class="sideB col-xs-12 col-md-6">
+                <div class="row content">
+                    <div class="card add-tweet">
+                        <div class="card-body">
+                            <div class="row top">
+                                <div class="col-2"><img class="user-pic2" src="assets/images/user1.jpg" alt="" srcset=""></div>
+                                <div class="col-10"><textarea class="form-control uText" rows="2" placeholder="What's on your mind?"></textarea></div>
+                            </div>
+                            <div class="row add-more">
+                                <div class="col-2"></div>
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-2"><i class="far fa-image"></i></div>
+                                        <div class="col-2"><i class="far fa-smile"></i></div>
+                                        <div class="col-2"><i class="fas fa-poll-h"></i></div>
+                                        <div class="col-2"><i class="fas fa-film"></i></div>
+                                        <div class="col-2"></div>
+                                        <div class="col-2"><button type="button" class="btn btn-primary btn-sm">Tweet</button></div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card tweets">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-2"><img class="user-pic2" src="assets/images/user4.jpg" alt="" srcset=""><p class="time">2h</p></div>
+                                <div class="col-10">
+                                    <div class="row tweet-head">
+                                        <div class="col-4">
+                                            <p class="name">Hansika Herath</p>
+                                            <p class="handle">@HanHe93</p>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="row">
+                                                <div class="col-2 heart active">
+                                                    <p class="tweet-values">1.3k</p>
+                                                    <i class="fas fa-heart"></i>
+                                                </div>
+                                                <div class="col-2 other">
+                                                    <p class="tweet-values">1.3k</p>
+                                                    <i class="far fa-comment"></i>
+                                                </div>
+                                                <div class="col-2 other">
+                                                    <p class="tweet-values">400</p>
+                                                    <i class="fas fa-retweet"></i>
+                                                </div>
+                                                <div class="col-2 other">
+                                                    <p class="tweet-values">20</p>
+                                                    <i class="fas fa-share-square"></i>
+                                                </div>
+                                                <div class="col-2 mini-menu">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row tweet-body">
+                                        <p class="context">Officialy <span class="hash">#Graduated</span> 😎</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card tweets">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-2"><img class="user-pic2" src="assets/images/user6.jpg" alt="" srcset=""><p class="time">2h</p></div>
+                                <div class="col-10">
+                                    <div class="row tweet-head">
+                                        <div class="col-4">
+                                            <p class="name">Sam Sigerra</p>
+                                            <p class="handle">@SamTheMan</p>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="row">
+                                                <div class="col-2 heart">
+                                                    <p class="tweet-values">100</p>
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="col-2 other">
+                                                    <p class="tweet-values">20</p>
+                                                    <i class="far fa-comment"></i>
+                                                </div>
+                                                <div class="col-2 other">
+                                                    <p class="tweet-values">&nbsp;</p>
+                                                    <i class="fas fa-retweet"></i>
+                                                </div>
+                                                <div class="col-2 other">
+                                                    <p class="tweet-values">&nbsp;</p>
+                                                    <i class="fas fa-share-square"></i>
+                                                </div>
+                                                <div class="col-2 mini-menu">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row tweet-body">
+                                        <p class="context">She did it 🙈</p>
+                                        <div class="card retweets">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-2"><img class="user-pic4" src="assets/images/user4.jpg" alt="" srcset=""><p class="retweet-time">2h</p></div>
+                                                    <div class="col-10">
+                                                        <div class="row retweet-head">
+                                                            <div class="col-10">
+                                                                <p class="name">Hansika Herath</p>
+                                                                <p class="handle">@HanHe93</p>
+                                                            </div>
+                                                            <div class="col-2"></div>
+                                                        </div>
+                                                        <div class="row retweet-body">
+                                                            <p class="context">Officialy <span class="hash">#Graduated</span> 😎</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card tweets">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-2"><img class="user-pic2" src="assets/images/user5.jpg" alt="" srcset=""><p class="time">2h</p></div>
+                                <div class="col-10">
+                                    <div class="row tweet-head">
+                                        <div class="col-4">
+                                            <p class="name">Chamal Jay</p>
+                                            <p class="handle">@MexJay</p>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="row">
+                                                <div class="col-2 heart">
+                                                    <p class="tweet-values">50</p>
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="col-2 other">
+                                                    <p class="tweet-values">6</p>
+                                                    <i class="far fa-comment"></i>
+                                                </div>
+                                                <div class="col-2 other">
+                                                    <p class="tweet-values">&nbsp;</p>
+                                                    <i class="fas fa-retweet"></i>
+                                                </div>
+                                                <div class="col-2 other">
+                                                    <p class="tweet-values">10</p>
+                                                    <i class="fas fa-share-square"></i>
+                                                </div>
+                                                <div class="col-2 mini-menu">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row tweet-body">
+                                        <p class="context">Please be nice <span class="hash">#2021 🙃😢💀</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sideC col-3">
+                <div class="alert alert-primary" role="alert">
+                    <div class="row">
+                        <div class="col-10">
+                            <img class="user-pic3" src="assets/images/user5.jpg" alt="" srcset="">
+                            <span class="tag">Chamal</span> added a video.
+                        </div>
+                        <div class="col-2">
+                            <i class="far fa-window-close"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-primary" role="alert">
+                    <div class="row">
+                        <div class="col-10">
+                            <i class="fas fa-heart heart-not ico-not"></i>
+                            <span class="tag">ReshK</span> liked your tweet.
+                        </div>
+                        <div class="col-2">
+                            <i class="far fa-window-close"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-primary" role="alert">
+                    <div class="row">
+                        <div class="col-10">
+                            <i class="fas fa-retweet ico-not"></i>
+                            <span class="tag">ReshK</span> retweeted...
+                        </div>
+                        <div class="col-2">
+                            <i class="far fa-window-close"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="float-ico">
+            <a href="#" class="float float-tweet">
+                <img src="assets/images/quill.png" height="30px" width="30px" alt="">
+            </a>
+        </div>
+        <div class="float-ico">
+            <a href="#" class="float2 float-tweet">
+                <img src="assets/images/message.png" height="30px" width="30px" alt="">
+            </a>
+        </div>
+    </main>
+</body>
+</html>
