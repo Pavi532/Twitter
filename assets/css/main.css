@@ -614,7 +614,7 @@ body{
         width: 40px;
     }
 }
-@media (max-width: 935px){
+@media (max-width: 955px){
     .sideB .tweet-values{
         display: none;
     }
@@ -623,6 +623,12 @@ body{
     }
     .sideB .tweet-head .col-8 .row{
         margin-top: 1rem;
+    }
+}
+@media (max-width: 806px){
+    .fixed-top .navColC .nav-link{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
