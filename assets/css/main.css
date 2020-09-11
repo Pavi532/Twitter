@@ -113,10 +113,21 @@ body{
 .fixed-bottom{
     display: none;
     background-color: #0068CF;
+    text-align: center;
 }
-
-.fixed-bottom .col i:hover{
-    color: #8CC6FF;
+.fixed-bottom .active{
+    background-color: white;
+    color: #0068CF;
+}
+.fixed-bottom .bell-not{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.fixed-bottom .col:hover{
+    background-color: white;
+}
+.fixed-bottom .nav-link:hover{
+    color: #0068CF;
 }
 
 
