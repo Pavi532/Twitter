@@ -178,15 +178,22 @@ body{
     margin: 0;
     padding: 0;
 }
+.follow .name:hover{
+    cursor: pointer;
+}
 .follow .handle{
     margin: 0;
     padding: 0;
+    opacity: 0.7;
 }
 .name{
     color: #DEE0E3;
 }
 .handle{
     color: #BAC9D1;
+}
+.sideA .follow .col-12{
+    display: none;
 }
 .follow .follow-add{
     height: 30px;
@@ -369,6 +376,13 @@ body{
 .sideB .name{
     margin-bottom: -0.2rem;
     font-size: 1.2rem;
+}
+.sideB .name:hover{
+    cursor: pointer;
+    color: #007BFF;
+}
+.sideB .handle{
+    opacity: 0.7;
 }
 .tweets .tweet-head, .tweets .retweet-head{
     border-bottom: 1px solid #A5B4BC;
@@ -589,18 +603,25 @@ body{
     .sideA .card-link{
         text-align: left;
     }
-    .sideA .follow-add{
+    .sideA .follow .col-2{
         display: none;
-    }
-    .sideA .follow .col-7{
-        padding-left: 5px;
-        padding-right: 0;
     }
     .sideA .follow .col-3{
         display: none;
     }
-    .sideA .follow .col-2{
+    .sideA .follow .col-7{
         display: none;
+    }
+    .sideA .follow .col-12{
+        display: block;
+        padding: 0;
+    }
+    .sideA .follow .col-12 p{
+        font-size: 15px;
+    }
+    .sideA .follow .col-12 .name:hover{
+        cursor: pointer;
+        color: #007BFF;
     }
     .sideB .card-body{
         padding-left: 5px;
@@ -625,7 +646,7 @@ body{
         margin-top: 1rem;
     }
 }
-@media (max-width: 806px){
+@media (max-width: 819px){
     .fixed-top .navColC .nav-link{
         padding-left: 0;
         padding-right: 0;
