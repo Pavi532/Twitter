@@ -18,9 +18,6 @@ body{
     background-color: #15202B;
     border-bottom: 1px solid #3997DB;
 }
-.navbar-nav{
-    /* width: 200px; */
-}
 .fixed-top .navColB .container .active i{
     color: #3997DB;
 }
@@ -346,7 +343,7 @@ body{
 .sideB .tweets .col-2{
     padding-right: 0;
 }
-.sideB .tweets. img{
+.sideB .tweets img{
     display: block;
     margin-left: auto;
     margin-right: auto;
