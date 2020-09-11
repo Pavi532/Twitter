@@ -595,9 +595,7 @@ body{
     .sideA .follow .name, .sideA .follow .handle{
         font-size: 12px;
     }
-    .user-pic3{
-        display: none;
-    }
+    
     .sideA .follow .col-2{
         padding: 0;
     }
