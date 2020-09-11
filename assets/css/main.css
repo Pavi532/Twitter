@@ -36,7 +36,6 @@ body{
 .btn-secondary:hover{
     background-color:transparent;
     border: none;
-
 }
 .btn-secondary:active{
     background-color:transparent;
@@ -161,7 +160,7 @@ body{
 .sideA .card-link{
     color: white;
     font-size: 1rem;
-    margin-left: 9.5rem; 
+    text-align: right; 
 }
 .sideA p{
     margin-top: 1.2rem;
@@ -190,6 +189,8 @@ body{
     color: #BAC9D1;
 }
 .follow .follow-add{
+    height: 30px;
+    width: 30px;
     margin: 8px 0px;
 }
 
@@ -201,11 +202,9 @@ body{
 }
 .sideA .pro-card .card-img{
     border-radius: 15px;
-    
 }
 .sideA .pro-card .card-img-overlay{
     background-color: rgba(0, 0, 0, 0.203);
-    /* padding-top: 15%; */
     border-radius: 15px;
     height: 410px;
 }
@@ -551,21 +550,52 @@ body{
     body{
         font-size: 85% !important;
     }
-    .sideA .card-link{
-        font-size: 85% !important;
-        margin-left: 70%;
+    .sideA .card-body .tag i{
+        display: none;
     }
 }
-@media (max-width: 1170px){
-    body{
-        font-size: 75% !important;
+@media (max-width: 1200px){
+    .sideA .user-pic2{
+        height: 35px;
+        width: 35px;
+    }
+    .sideA .follow .col-7{
+        padding-left: 0;
+        padding-right: 5px;
+    }
+    .sideA .follow .name, .sideA .follow .handle{
+        font-size: 12px;
     }
     .user-pic3{
         display: none;
     }
+    .sideA .follow .col-2{
+        padding: 0;
+    }
+    .sideA .follow-add{
+        height: 20px;
+        width: 20px;
+    }
+}
+@media (max-width: 1030px){
+    .sideA .trending .col-2{
+        display: none;
+    }
     .sideA .card-link{
-        font-size: 75% !important;
-        margin-left: 60%;
+        text-align: left;
+    }
+    .sideA .follow-add{
+        display: none;
+    }
+    .sideA .follow .col-7{
+        padding-left: 5px;
+        padding-right: 0;
+    }
+    .sideA .follow .col-3{
+        display: none;
+    }
+    .sideA .follow .col-2{
+        display: none;
     }
 }
 
