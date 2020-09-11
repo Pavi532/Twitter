@@ -342,7 +342,7 @@ body{
 .sideB .tweets .col-2{
     padding-right: 0;
 }
-.sideB .tweets img{
+.sideB .tweets img, .sideB .add-tweet img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -600,6 +600,9 @@ body{
     .sideA .follow .col-2{
         display: none;
     }
+    .sideB .card-body{
+        padding-left: 5px;
+    }
     .sideB .tweets .tweet-head .col-4 .name, .sideB .tweets .tweet-head .col-4 .handle{
         font-size: 1rem;
         padding-left: 5px;
@@ -608,6 +611,7 @@ body{
         height: 40px;
         width: 40px;
     }
+
 }
 
 @media (max-width: 768px) { 
