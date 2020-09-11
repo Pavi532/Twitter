@@ -713,16 +713,26 @@ body{
         display: none;
     }
     .float{
-	bottom:130px;
-	right:40px;
+	bottom:200px;
+	right:20px;
     }
     .float2{
-        bottom:60px;
+        bottom:130px;
+        right:20px;
     }
     .sideA .pro-card .col-2 .counts{
         display: none;
     }
     .sideB .profile-res{
         display: block;
+    }
+    .float-tweet{
+        width: 45px;
+        height: 45px;
+    }
+    .float-tweet img{
+        margin-top: 9px;
+        width: 25px;
+        height: 25px;
     }
 }
