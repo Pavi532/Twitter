@@ -293,6 +293,10 @@ body{
     background-color: #121C25;
     color: white;
 }
+.sideB .content .card{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .retweets{
     margin-left: 0 !important;
     margin-top: 0.5rem !important;
@@ -576,9 +580,7 @@ body{
         height: 20px;
         width: 20px;
     }
-    .sideB .retweets .col-10{
-        margin-left: ;
-    }
+    
 }
 @media (max-width: 1030px){
     .sideA .trending .col-2{
@@ -611,7 +613,17 @@ body{
         height: 40px;
         width: 40px;
     }
-
+}
+@media (max-width: 935px){
+    .sideB .tweet-values{
+        display: none;
+    }
+    .sideB .mini-menu{
+        margin: 0;
+    }
+    .sideB .tweet-head .col-8 .row{
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 768px) { 
