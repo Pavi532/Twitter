@@ -350,8 +350,8 @@ body{
 .time{
     color:#A5B4BC;
     font-size: 0.8rem;
+    text-align: center;
     margin-top: 0.5rem;
-    margin-left: 1.4rem;
     margin-bottom: 0;
 }
 .retweet-time{
@@ -576,6 +576,9 @@ body{
         height: 20px;
         width: 20px;
     }
+    .sideB .retweets .col-10{
+        margin-left: ;
+    }
 }
 @media (max-width: 1030px){
     .sideA .trending .col-2{
@@ -596,6 +599,14 @@ body{
     }
     .sideA .follow .col-2{
         display: none;
+    }
+    .sideB .tweets .tweet-head .col-4 .name, .sideB .tweets .tweet-head .col-4 .handle{
+        font-size: 1rem;
+        padding-left: 5px;
+    }
+    .sideB .user-pic2{
+        height: 40px;
+        width: 40px;
     }
 }
 
