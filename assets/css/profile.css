@@ -1,8 +1,9 @@
 .sideB .content{
     height: 80.5vh;
 }
-@media (max-width: 768px){
+@media (max-width: 767.9px){
     .sideB .content{
-        height: 91vh;
+        height: 60vh;
     }
+
 }

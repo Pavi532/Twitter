@@ -781,6 +781,9 @@ body{
     .sideA .pro-card .col-2 .counts{
         display: none;
     }
+    .sideB .content{
+        height: 85vh;
+    }
     .sideB .profile-res{
         display: block;
     }
