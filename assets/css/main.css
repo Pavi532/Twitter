@@ -718,8 +718,7 @@ body{
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    .fixed-bottom 
-    {
+    .fixed-bottom {
         display: inline;
     }
     .fixed-bottom #navbarText2{
@@ -781,5 +780,23 @@ body{
         margin-top: 9px;
         width: 25px;
         height: 25px;
+    }
+}
+
+@media (max-width: 470px){
+    .fixed-bottom .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .fixed-bottom .col{
+        padding: 0;
+    }
+    .fixed-bottom .col .nav-link{
+        font-size: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .sideB .tweet-values{
+        display: none;
     }
 }
