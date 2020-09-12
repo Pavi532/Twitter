@@ -615,6 +615,10 @@ body{
     .sideC .ico-not{
         font-size: 17px;
     }
+    .sideC .notification .details .with-pic{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 @media (max-width: 1030px){
     .sideA .trending .col-2{
