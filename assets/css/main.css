@@ -94,8 +94,8 @@ body{
 }
 .user-pic5{
     border-radius: 50%;
-    height: 125px;
-    width: 125px;
+    height: 8.1vw;
+    width: 8.1vw;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -171,12 +171,11 @@ body{
 .sideA .card-link{
     color: white;
     font-size: 1rem;
-    text-align: right; 
-}
-.sideA p{
+    text-align: right;
     margin-top: 1.2rem;
     margin-bottom: 0;
 }
+
 .follow .row{
     margin-left: 2px;
     margin-right: 5px;
@@ -213,8 +212,10 @@ body{
 }
 
 /* SIDE-A CARD-PRO */
+.sideA #pro-con{
+    padding: 0 !important;
+}
 .sideA .pro-card{
-    height: 25rem;
     border-radius: 15px;
     background-position:center;
 }
@@ -224,7 +225,7 @@ body{
 .sideA .pro-card .card-img-overlay{
     background-color: rgba(0, 0, 0, 0.203);
     border-radius: 15px;
-    height: 410px;
+    padding-top: 0.5vw;
 }
 .sideA .pro-card .card-img-overlay i{
     margin-left: 95%;
@@ -233,47 +234,52 @@ body{
 .sideA .pro-card .card-img-overlay i:hover{
     opacity: 1;
 }
+.sideA .pro-card .card-img-overlay .row{
+    height: 4.3vw;
+}
 .sideA .pro-card .card-img-overlay .card-title{
     text-align: center;
-    margin-top: 0.8rem;
+    font-size: 2.2vw;
 }
 .sideA .pro-card .card-img-overlay .card-subtitle{
     text-align: center;
     margin-top: -0.7rem;
     margin-bottom: 0.5rem;
+    font-size: 1.65vw;
     color: #D8D8D8;
 }
 .sideA .pro-card .card-img-overlay .card-text{
     text-align: center;
     margin-top: 0.2rem;
-}
-.sideA .pro-card .card-img-overlay .row{
-    margin-top: 0.5rem;
+    font-size: 1.15vw;
+    margin-bottom: 0;
 }
 .sideA .pro-card .card-img-overlay .counts{
     text-align: center;
 }
 .sideA .pro-card .card-img-overlay .count{
     color: #007BFF;
+    font-size: 2.4vw;
 }
 .sideA .pro-card .card-img-overlay .count-text{
-    font-size: 12px;
+    font-size: 0.9vw;
     text-align: center;
     margin-top: -2rem;
     color: #A4B2B9;
 }
 .sideA .pro-card .card-img-overlay .add-user{
     margin-top: 0.5rem;
-    height: 30px;
-    width: 30px;
+    height: 2.4vw;
+    width: 2.4vw;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 .sideA .pro-card .card-img-overlay .card-text-join{
-    margin-top: 0.5rem;
+    font-size: 1.15vw;
     color: #A4B2B9;
     text-align: center;
+    margin-top: 0.5vw;
 }
 /* SIDE B */
 .sideB .content{
@@ -383,7 +389,6 @@ body{
     margin-left: 1rem;
     margin-bottom: 0;
 }
-
 .sideB .name{
     margin-bottom: -0.2rem;
     font-size: 1.2rem;
@@ -476,6 +481,7 @@ body{
     margin-top: 0;
     margin-bottom: 10px;
 }
+
 /* SIDE C */
 .sideC{
     padding-top: 1.2rem;
@@ -526,8 +532,8 @@ body{
 .sideC .heart-not:hover{
     color: #E74C3C;
 }
-/* FLOAT */
 
+/* FLOAT */
 .float{
     position:fixed;
 	width:60px;
@@ -676,6 +682,9 @@ body{
     }
 }
 @media (max-width: 875px){
+    .sideA .pro-card .card-img-overlay .add-user{
+        margin-top: 0;
+    }
     .sideB .tweets .tweet-head .col-4 .name, .sideB .tweets .tweet-head .col-4 .handle{
         font-size: 0.8rem;
     }
