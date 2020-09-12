@@ -1,0 +1,8 @@
+.sideB .content{
+    height: 80.5vh;
+}
+@media (max-width: 768px){
+    .sideB .content{
+        height: 91vh;
+    }
+}

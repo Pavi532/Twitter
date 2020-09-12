@@ -102,8 +102,8 @@ body{
 }
 .user-pic6{
     border-radius: 50%;
-    height: 95px;
-    width: 95px;
+    height: 16vw;
+    width: 16vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -295,7 +295,6 @@ body{
     overflow-x: hidden; 
     overflow-y: auto;
     background-color: #121C25;
-    padding-top:1.2rem;
     padding-bottom:1.2rem;
 }
 .sideB .sub-menu-pro{
@@ -303,7 +302,7 @@ body{
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.3vw;
     color: #A7B7C0;
     border-bottom: 2px solid transparent;
     border-radius: 10px 10px 0px 0px;
@@ -619,6 +618,9 @@ body{
     }
 }
 @media (max-width: 1075px){
+    .sideB .sub-menu-pro{
+        padding-bottom: 0;
+    }
     .sideB .tweets .tweet-head .col-4 .name, .sideB .tweets .tweet-head .col-4 .handle{
         font-size: 0.95rem;
         padding-left: 5px;
@@ -767,6 +769,17 @@ body{
     .sideB .profile-res{
         display: block;
     }
+    .sideB .content{
+        padding-top: 0;
+    }
+    .sideB .sub-menu-pro{
+        padding-top: 0.3rem;
+        padding-bottom: 0;
+        font-size: 2.7vw;
+    }
+    .sideB .tweet-head .col-8 .row{
+        margin-top: 0;
+    }
     .sideB .tweets .tweet-head .col-4 .name, .sideB .tweets .tweet-head .col-4 .handle{
         font-size: 1rem;
     }
@@ -797,7 +810,13 @@ body{
         padding-left: 0;
         padding-right: 0;
     }
+    .sideB .sub-menu-pro{
+        font-size: 3vw;
+    }
     .sideB .tweet-values{
         display: none;
+    }
+    .sideB .tweet-head .col-8 .row{
+        margin-top: 1rem;
     }
 }
