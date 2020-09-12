@@ -451,32 +451,47 @@ body{
 }
 .sideB .profile-res .card-img-overlay{
     background-color: rgba(0, 0, 0, 0.203);
+    padding-top: 10px;
+}
+.sideB .profile-res .col-3{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .sideB .profile-res .col-9 i{
     margin-left: 95%;
     opacity: 0.5;
 }
+.sideB .profile-res .card-title{
+    margin-bottom: 0;
+    font-size: 4vw;
+}
 .sideB .profile-res .col-9 i:hover{
     opacity: 1;
 }
 .sideB .profile-res .col-9 .cover-handle{
-    font-size: 16px;
+    font-size: 2.75vw;;
     color: #D8D8D8;
 }
 .sideB .profile-res .col-9 .joined{
     font-size: 10px;
+}
+.sideB .profile-res .col-9 .card-text{
+    font-size: 2.1vw;
 }
 .sideB .profile-res .col-9 .col-4{
     padding-left: 0;
     padding-top: 10px;
 }
 .sideB .profile-res .counts{
-    font-size: 13px;
+    font-size: 1.8vw;
     text-align: left;
 }
+.sideB .profile-res .badge-primary{
+    font-size: 2vw;
+}
 .sideB .profile-res .add-user2{
-    height: 25px;
-    width: 25px;
+    height: 4vw;
+    width: 4vw
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -706,7 +721,7 @@ body{
     }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 767.9px) { 
     .fixed-top .navbar-nav{
         display: none;
     }
